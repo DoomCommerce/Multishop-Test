@@ -1,0 +1,32 @@
+name : Action Testing
+
+on:
+    workflow_dispatch:
+
+jobs:
+
+    test:
+
+        runs-on : ubuntu-latest
+
+        strategy:
+            matrix:
+                node-version : [ 20.x ]
+
+        steps:
+
+            -   name : Test Action
+                uses : DoomCommerce/Multishop@Stable
+                with :
+
+                    Secret : ${{ secrets.Deploy }}
+                    Stable : Stable
+
+                    Stores :
+                        -   Staging : Staging-A
+                            Live : Live-A
+
+                    Commit :
+
+                        Email : User@Page.com
+                        User : Username
