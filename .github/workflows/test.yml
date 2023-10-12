@@ -23,7 +23,6 @@ jobs:
                     
                     Staging : Staging-A
                     Stable : Stable
-                    Live : Live-A
                     
                     Commit : Sync from Stable
                     Email : User@Page.com
