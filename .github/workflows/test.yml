@@ -21,15 +21,10 @@ jobs:
 
                     Secret : ${{ secrets.Deploy }}
                     
-                    Config : |
+                    Staging : Staging-A
+                    Stable : Stable
+                    Live : Live-A
                     
-                        Stable : Stable
-
-                        Stores :
-                            -   Staging : Staging-A
-                                Live : Live-A
-
-                        Commit :
-
-                            Email : User@Page.com
-                            User : Username
+                    Commit : Sync from Stable
+                    Email : User@Page.com
+                    User : Username
