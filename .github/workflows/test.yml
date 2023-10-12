@@ -20,13 +20,16 @@ jobs:
                 with :
 
                     Secret : ${{ secrets.Deploy }}
-                    Stable : Stable
+                    
+                    Config : |
+                    
+                        Stable : Stable
 
-                    Stores :
-                        -   Staging : Staging-A
-                            Live : Live-A
+                        Stores :
+                            -   Staging : Staging-A
+                                Live : Live-A
 
-                    Commit :
+                        Commit :
 
-                        Email : User@Page.com
-                        User : Username
+                            Email : User@Page.com
+                            User : Username
