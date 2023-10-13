@@ -25,12 +25,12 @@ jobs:
                     User : Username
 
                     Paths: |
-                        'templates'
-                        'snippets'
-                        'sections'
-                        'assets'
-                        'layout/password.liquid'
-                        'config/settings_schema.json'
+                        templates
+                        snippets
+                        sections
+                        assets
+                        layout/password.liquid
+                        config/settings_schema.json
                         ':!templates/**/*.json'
                         ':!templates/*.json'
                         ':!*/gift_card.*'
