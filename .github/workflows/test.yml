@@ -27,3 +27,6 @@ jobs:
                     Commit : Sync from Stable
                     Email : User@Page.com
                     User : Username
+
+                    Exclude: |
+                       */gift_card.*
