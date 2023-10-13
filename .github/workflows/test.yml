@@ -22,7 +22,7 @@ jobs:
                     Secret : ${{ secrets.Deploy }}
                     
                     Staging : Staging-A
-                    Stable : Stable
+                    Stable : main
                     
                     Commit : Sync from Stable
                     Email : User@Page.com
