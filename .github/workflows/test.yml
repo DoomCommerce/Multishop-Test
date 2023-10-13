@@ -28,5 +28,13 @@ jobs:
                     Email : User@Page.com
                     User : Username
 
-                    Exclude: |
-                       */gift_card.*
+                    Paths: |
+                        'templates'
+                        'snippets'
+                        'sections'
+                        'assets'
+                        'layout/password.liquid'
+                        'config/settings_schema.json'
+                        ':!templates/**/*.json'
+                        ':!templates/*.json'
+                        ':!*/gift_card.*'
